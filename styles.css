@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+:root {
+  --pink: hsl(322, 100%, 66%);
+  --gray-blue: hsl(208, 11%, 55%);
+  --dark-cyan: hsl(192, 100%, 9%);
+  --pale-cyan: hsl(193, 100%, 96%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.navbar__logo {
+  width: 105px;
+  height: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 1.5em 1em;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.navbar__button {
+  width: 100px;
+  font-size: 0.8rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  padding: 0.5em;
+  margin-left: 130px;
+  background-color: white;
+  border: none;
+  border-radius: 18px;
+  box-shadow: 3px 5px 9px -1px rgba(0, 0, 0, 0.2);
+}
+
+.intro {
+  background-image: url("./images/bg-hero-mobile.svg");
+  background-size: contain;
+  background-color: var(--pale-cyan);
+  padding: 135px 2em 2em;
+}
+
+.intro__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.intro__heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 1.3em;
+}
+
+.intro__message {
+  font-size: 0.88rem;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.button--pink {
+  width: 240px;
+  padding: 0.88em;
+  border: none;
+  border-radius: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: white;
+  background-color: var(--pink);
+  box-shadow: 3px 5px 9px -1px rgba(0, 0, 0, 0.2);
+}
+
+.intro__image {
+  max-width: 100%;
+}
+
+.info {
+  padding: 3.5em 1em;
+  position: relative;
+  padding-bottom: 200px;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+  padding: 2em 2.3em;
+  border-radius: 11px;
+  box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.feature img {
+  max-width: 100%;
+}
+
+.feature__heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  margin: 2em 0 1em;
+}
+
+.feature__info {
+  font-size: 0.75rem;
+  color: var(--gray-blue);
+  line-height: 1.6;
+}
+
+.info__appeal {
+  text-align: center;
+  width: 90%;
+  border-radius: 12px;
+  padding: 2.8em 0 2em;
+  position: absolute;
+  background-color: white;
+  left: 18px;
+  bottom: -75px;
+  box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.2);
+}
+
+.appeal__heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 1.2em;
+}
+
+.appeal__button {
+  width: 200px;
+}
+
+.footer {
+  background-color: var(--dark-cyan);
+  padding: 150px 1em 2em;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  color: white;
+}
+
+.footer__logo {
+  height: 27px;
+}
+
+.footer__contact {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  margin: 2em 0 2.5em;
+  grid-gap: 1em 0.5em;
+}
+
+.footer__contact img {
+  display: block;
+  padding-top: 5px;
+}
+
+.address,
+.phone,
+.mail {
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+
+.footer__link {
+  font-size: 0.85rem;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 0.75em;
+}
+
+.footer__links--left,
+.footer__links--right {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__social-media-icons {
+  grid-column: 1 / 2;
+  margin: 2em 0 1.5em;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.fab {
+  font-size: 0.85rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 0.5em;
+  margin: 0 0.75em;
+  cursor: pointer;
+}
+
+.fa-facebook-f {
+  padding: 0.5em 0.7em;
+}
+
+.copyright {
+  grid-column: 1 / 2;
+  font-size: 0.55rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar__logo {
+    width: 210px;
+    height: auto;
+  }
+
+  .navbar {
+    padding: 2.5em 4em;
+    width: 100vw;
+  }
+
+  .navbar__button {
+    width: 206px;
+    margin-left: auto;
+    padding: 1em;
+    border-radius: 30px;
+  }
+
+  .intro {
+    display: flex;
+    padding: 10em 5.5em 3.5em;
+    background-image: url("./images/bg-hero-desktop.svg");
+  }
+
+  .intro__content {
+    text-align: left;
+    align-items: flex-start;
+    margin-bottom: 0;
+    padding-right: 70px;
+    flex-shrink: 2;
+    align-self: center;
+  }
+
+  .intro__heading {
+    font-size: 2rem;
+  }
+
+  .intro__message {
+    font-size: 1rem;
+  }
+
+  .button--pink {
+    width: 280px;
+    padding: 1em;
+  }
+
+  .info {
+    padding: 9em 6em 200px;
+  }
+
+  .feature {
+    flex-direction: row-reverse;
+    padding: 30px;
+    padding-left: 102px;
+    text-align: left;
+    box-shadow: 0px 0px 25px -6px rgba(0, 0, 0, 0.2);
+  }
+
+  .feature img {
+    height: 350px;
+    width: auto;
+  }
+
+  .feature__content {
+    padding-top: 20px;
+    padding-right: 9em;
+  }
+
+  .feature__heading {
+    font-size: 1.5rem;
+  }
+
+  .feature__info {
+    font-size: 1rem;
+  }
+
+  .feature:nth-child(even) {
+    flex-direction: row;
+  }
+
+  .feature:nth-child(even) .feature__content {
+    padding-right: 0;
+    padding-left: 9em;
+  }
+
+  .info__appeal {
+    max-width: 825px;
+    left: 355px;
+  }
+
+  .appeal__heading {
+    font-size: 1.5rem;
+  }
+
+  .appeal__button {
+    padding: 1.3em;
+  }
+
+  .footer {
+    padding-right: 4.5em;
+    padding-left: 4.5em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 15px;
+  }
+
+  .footer__logo {
+    height: 45px;
+    display: block;
+    grid-column: 1 / 5;
+  }
+
+  .footer__contact {
+    grid-column: 1 / 2;
+    grid-row-gap: 1.5em;
+  }
+
+  .footer__links--left {
+    grid-column: 2 / 3;
+    justify-self: center;
+    margin-top: 2.2em;
+  }
+
+  .footer__links--right {
+    grid-column: 3 / 4;
+    justify-self: center;
+    margin-top: 2.2em;
+  }
+
+  .footer__social-media-icons {
+    grid-column: 4 / 5;
+    align-self: start;
+    justify-content: flex-start;
+    margin-left: 50px;
+  }
+
+  .copyright {
+    grid-column: 1 / 5;
+    justify-self: end;
+    text-align: right;
+    font-size: 0.7rem;
+  }
+}
